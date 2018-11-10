@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NY Times Sample</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+    <string-array name="dashboard_items_menu">
+        <item>Home</item>
+    </string-array>
+</resources>
