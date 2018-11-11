@@ -137,9 +137,7 @@ public class DashboardActivity extends MvpBaseActivity<DashBoardPresenter, Dashb
     public void navigationListProcess() {
         if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-//            framework.setVisibility(View.GONE);
         } else {
-//            framework.setVisibility(View.VISIBLE);
             mDrawerLayout.openDrawer(GravityCompat.START);
         }
     }
@@ -148,5 +146,11 @@ public class DashboardActivity extends MvpBaseActivity<DashBoardPresenter, Dashb
     public void callNavigationDrawer() {
         mFramelayout.setVisibility(View.VISIBLE);
         navigationListProcess();
+    }
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        finish();
     }
 }

@@ -1,5 +1,15 @@
 package com.nytimessample.businessmodules;
 
+import android.app.Activity;
+import android.content.Context;
+import android.support.v4.app.Fragment;
+import android.util.Log;
+
+import com.nytimessample.model.Result;
+import com.nytimessample.network.APIResponse;
+import com.nytimessample.network.CallbackService;
+import com.nytimessample.network.EndPoint;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,21 +19,27 @@ import java.util.List;
  */
 
 public class DashboardPresenterImpl implements DashboardFragmentPresenter {
-    //for temp purpose
-    String[] temp_items = {"Apple","Banana","Orange","Graps","sapota"};
 
+    Fragment mContext;
+    DashboardView mView;
+
+    DashboardPresenterImpl(Fragment context,DashboardView view) {
+        mContext = context;
+        this.mView = view;
+    }
     @Override
     public void loadItems() {
-
+        mView.showProgressDialog();
+        new EndPoint().getResult(new APIResponse() {
+            @Override
+            public void onSuccess(List<Result> res) {
+                Log.e("response is ", "<><>" + res);
+                mView.hideProgressDialog();
+                ((CallbackService) mContext).callBackActivity(res);
+            }
+            @Override
+            public void onFailure(Throwable t) {
+            }
+        });
     }
-
-    @Override
-    public List<String> getItems() {
-        return  new ArrayList<>(Arrays.asList(temp_items));
-    }
-
-
-
-
-
 }

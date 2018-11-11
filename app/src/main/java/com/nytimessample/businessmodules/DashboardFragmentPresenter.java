@@ -9,5 +9,4 @@ import java.util.List;
 
 public interface DashboardFragmentPresenter {
     void loadItems();
-    List<String> getItems();
 }
