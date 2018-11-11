@@ -24,7 +24,7 @@ Prerequisites
 #### The app has following packages:
 1. **model**: It contains all the data accessing and manipulating components.
 2. **di** It contains dependency injuction components.
-3. **utils* It contains supported classes.
+3. **utils** It contains supported classes.
 4. **network**: Retrofit classes .
 5. **businessmodules** It contains Business logic implementation.
 6. **components** It contains Application Components and base Components.
