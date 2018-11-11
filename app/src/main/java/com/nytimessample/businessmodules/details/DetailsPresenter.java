@@ -7,7 +7,7 @@ import com.nytimessample.coremodules.MvpBasePresenter;
 import com.nytimessample.coremodules.MvpPresenter;
 
 /**
- * Created by Rajesh kumar on 11-11-2018.
+ * Created by Developer on 11-11-2018.
  */
 
 public interface DetailsPresenter extends MvpPresenter<DetailsView> {

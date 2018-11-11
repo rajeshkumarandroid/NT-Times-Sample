@@ -12,7 +12,7 @@ import com.nytimessample.utils.Webview_implementation;
 import com.nytimessample.utils.smoothprogress.SmoothProgressDrawable;
 
 /**
- * Created by Rajesh kumar on 11-11-2018.
+ * Created by Developer on 11-11-2018.
  */
 
 public class DetailsPresenterImpl extends MvpBasePresenter<DetailsView> implements DetailsPresenter, HandlingViews {

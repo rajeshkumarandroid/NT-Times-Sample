@@ -1,7 +1,7 @@
 package com.nytimessample.components;
 
 /**
- * Created by Rajesh kumar on 10-11-2018.
+ * Created by Developer on 10-11-2018.
  */
 
 public class NYTimesSample extends NYTimesBase {

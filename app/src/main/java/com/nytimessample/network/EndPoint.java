@@ -8,7 +8,7 @@ import retrofit2.Response;
 
 
 /**
- * Created by Rajesh Kumar on 15-02-2018.
+ * Created by Developer on 15-02-2018.
  */
 
 public class EndPoint  {

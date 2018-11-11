@@ -27,7 +27,7 @@ import com.nytimessample.utils.Dashboard_items;
 import butterknife.BindView;
 
 /**
- * Created by Rajesh kumar on 10-11-2018.
+ * Created by Developer on 10-11-2018.
  */
 
 public class DashboardActivity extends MvpBaseActivity<DashBoardPresenter, DashboardComponent> implements DashboardView,MenuCallback {

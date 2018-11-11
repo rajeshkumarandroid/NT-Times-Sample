@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
- * Created by Rajesh kumar on 27-06-2018.
+ * Created by Developer on 27-06-2018.
  */
 
 public abstract class MvpBaseActivity<P extends MvpPresenter,C> extends AppCompatActivity implements MvpView<P> {

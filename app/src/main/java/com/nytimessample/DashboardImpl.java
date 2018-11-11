@@ -5,7 +5,7 @@ import android.os.Bundle;
 import com.nytimessample.coremodules.MvpBasePresenter;
 
 /**
- * Created by Rajesh kumar on 10-11-2018.
+ * Created by Developer on 10-11-2018.
  */
 
 public class DashboardImpl extends MvpBasePresenter<DashboardView> implements DashBoardPresenter {

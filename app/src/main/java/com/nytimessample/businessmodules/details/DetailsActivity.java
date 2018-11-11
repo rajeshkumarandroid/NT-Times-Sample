@@ -15,7 +15,7 @@ import com.nytimessample.utils.smoothprogress.SmoothProgressDrawable;
 import butterknife.BindView;
 
 /**
- * Created by Rajesh kumar on 11-11-2018.
+ * Created by Developer on 11-11-2018.
  */
 
 public class DetailsActivity extends MvpBaseActivity<DetailsPresenter, DetailsComponent> implements DetailsView {

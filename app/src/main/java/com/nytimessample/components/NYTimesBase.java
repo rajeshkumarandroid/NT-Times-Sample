@@ -3,7 +3,7 @@ package com.nytimessample.components;
 import android.app.Application;
 
 /**
- * Created by Rajesh kumar on 10-11-2018.
+ * Created by Developer on 10-11-2018.
  */
 
 public abstract class NYTimesBase extends Application {
