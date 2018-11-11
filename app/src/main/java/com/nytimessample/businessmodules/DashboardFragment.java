@@ -101,21 +101,16 @@ public class DashboardFragment extends Fragment implements CallbackService,Dashb
         public void onBindViewHolder(CustomViewHolder customViewHolder,final int i) {
             final String name = feedItemList.get(i).getTitle();
             customViewHolder.txtHeader.setText(name);
-            customViewHolder.date.setText(feedItemList.get(i).getPublishedDate());
+            customViewHolder.txtDate.setText(feedItemList.get(i).getPublishedDate());
 
-            customViewHolder.source.setText(feedItemList.get(i).getSource());
-            customViewHolder.byLine.setText(feedItemList.get(i).getByline());
+            customViewHolder.txtSource.setText(feedItemList.get(i).getSource());
+            customViewHolder.txtByLine.setText(feedItemList.get(i).getByline());
             Picasso.with(getActivity())
                     .load(feedItemList.get(i).getMedia().get(0).getMediaMetadata().get(0).getUrl())
                     .into(customViewHolder.imgArticleIcon);
             customViewHolder.layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
-//                    HashMap<String,String> itemData = new HashMap<>();
-//                    itemData.put("Item_name",feedItemList.get(i).getTitle());
-//                    itemData.put("Item url",feedItemList.get(i).getUrl());
-//                    fragmentTransaction.add(R.id.frame_layout,DetailFragment.getInstance(itemData)).commit();
                     Intent intent = new Intent(getActivity(), DetailsActivity.class);
                     intent.putExtra("Item url",feedItemList.get(i).getUrl());
                     startActivity(intent);
@@ -130,19 +125,19 @@ public class DashboardFragment extends Fragment implements CallbackService,Dashb
 
         class CustomViewHolder extends RecyclerView.ViewHolder {
             private TextView txtHeader;
-            private TextView date;
+            private TextView txtDate;
             private ImageView imgArticleIcon;
             private View layout;
-            private TextView source;
-            private TextView byLine;
+            private TextView txtSource;
+            private TextView txtByLine;
             public CustomViewHolder(View view) {
                 super(view);
                 layout = view;
                 txtHeader = (TextView) view.findViewById(R.id.title);
                 imgArticleIcon = (ImageView) view.findViewById(R.id.img_article_icon);
-                date = (TextView) view.findViewById(R.id.date);
-                source = (TextView) view.findViewById(R.id.source);
-                byLine = (TextView) view.findViewById(R.id.byLine);
+                txtDate = (TextView) view.findViewById(R.id.date);
+                txtSource = (TextView) view.findViewById(R.id.source);
+                txtByLine = (TextView) view.findViewById(R.id.byLine);
 
             }
 
